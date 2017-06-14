@@ -20,7 +20,7 @@
   "activationEvents": [
     "onCommand:sensitive.replace"
   ],
-  "main": "./out/extension",
+  "main": "./bld/extension",
   "contributes": {
     "commands": [
       {

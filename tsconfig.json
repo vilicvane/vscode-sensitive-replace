@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "target": "es6",
+    "outDir": "bld",
+    "lib": [
+      "es6"
+    ],
+    "sourceMap": true,
+    "rootDir": "src"
+  },
+  "exclude": [
+    "bld",
+    "node_modules"
+  ]
+}
