@@ -2,7 +2,7 @@
   "name": "sensitive-replace",
   "displayName": "Sensitive Replace",
   "description": "Replace selections while preserving cases.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "vilicvane",
   "repository": {
     "type": "git",
