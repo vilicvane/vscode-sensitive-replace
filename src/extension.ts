@@ -15,6 +15,14 @@ const patterns: CasePattern[] = [
     },
   },
   {
+    regex: /[-._/\\: ]/,
+    build(words, groups) {
+      return words
+        .map(word => replace(word, [word]) || word)
+        .join(groups[0]);
+    },
+  },
+  {
     regex: /^[a-z][a-z\d]*(?=[A-Z]|$)/,
     build(words) {
       return format(words[0], true) + words.slice(1).map(word => format(word)).join('');
@@ -37,14 +45,6 @@ const patterns: CasePattern[] = [
       function format(word: string): string {
         return word[0].toUpperCase() + word.slice(1);
       }
-    },
-  },
-  {
-    regex: /[-_ ]/,
-    build(words, groups) {
-      return words
-        .map(word => replace(word, [word]) || word)
-        .join(groups[0]);
     },
   },
 ];
